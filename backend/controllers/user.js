@@ -2,6 +2,10 @@ import { User } from "../models/userModel.js";
 import bcryptjs from "bcryptjs";
 import jwt from "jsonwebtoken";
 
+export const showconnection=()=>{
+    console.log("backemd connected");
+}
+
 export const Login = async(req,res)=>{
     try {
         const {email,password} = req.body;
